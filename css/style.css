@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(33, 134, 228);
+  animation-name: abc;
+  animation-duration: 2s;
+  /* số vòng lặp của animation */
+  animation-iteration-count: 1;
+  /* xong animation xong sẽ đi lùi về trạng thái ban đầu chứ ko biến về đột ngột */
+  animation-direction: alternate;
+  /* xong animation r sẽ giữ nguyên ở trạng thái kết thúc luôn */
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes abc {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 100%;
+    background-color: cyan;
+  }
+}
